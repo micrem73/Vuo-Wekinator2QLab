@@ -1,0 +1,102 @@
+/**
+ * @file
+ *
+ * @author [cremaschi](https://vuo.org/user/599)
+ * @createdInVuoVersion 2.4.1
+ * @lastSavedInVuoVersion 2.4.1
+ * @copyright Copyright © 2022 [cremaschi](https://vuo.org/user/599)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+AppendTexts [type="vuo.text.append" version="1.2.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<compositeText>compositeText\r" pos="515,189" _includeEmptyParts="true"];
+AppendTexts3 [type="vuo.text.append" version="1.2.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<compositeText>compositeText\r" pos="1362,-62" _includeEmptyParts="true"];
+ChangeWindowSize [type="vuo.window.size2" version="2.0.1" label="Change Window Size|<refresh>refresh\l|<windowDescription>windowDescription\l|<width>width\l|<height>height\l|<unit>unit\l|<changedWindowDescription>changedWindowDescription\r" pos="1226,-198" _width="640" _height="480" _unit="\"points\""];
+ConvertTextToData [type="vuo.type.text.data" version="1.0.0" label="Convert Text to Data|<refresh>refresh\l|<text>text\l|<data>data\r" pos="611,-23"];
+ConvertTextToInteger [type="vuo.type.text.integer" version="1.0.1" label="Convert Text to Integer|<refresh>refresh\l|<text>text\l|<integer>integer\r" pos="276,241"];
+ConvertTextToInteger4 [type="vuo.type.text.integer" version="1.0.1" label="Convert Text to Integer|<refresh>refresh\l|<text>text\l|<integer>integer\r" pos="895,458"];
+FetchXMLTree [type="vuo.tree.fetch.xml" version="1.0.0" label="Fetch XML Tree|<refresh>refresh\l|<url>url\l|<includeWhitespace>includeWhitespace\l|<tree>tree\r" pos="387,-2" _url="\"file:\\/\\/Wekinator2Qlab.settings.txt\"" _includeWhitespace="false"];
+FileExists [type="vuo.file.exists" version="1.0.0" label="File Exists|<refresh>refresh\l|<url>url\l|<exists>exists\r" pos="-42,-65" _url="\"Wekinator2Qlab.settings.txt\""];
+FilterByAddress [type="vuo.osc.filter.address" version="1.0.1" label="Filter by Address|<refresh>refresh\l|<message>message\l|<address>address\l|<filteredMessage>filteredMessage\r" pos="295,343"];
+FindSubtreeValue3 [type="vuo.tree.find.VuoText" version="1.0.0" label="Find Subtree Value|<refresh>refresh\l|<tree>tree\l|<name>name\l|<value>value\r" pos="748,-80" _name="\"InputPort\""];
+FindSubtreeValue4 [type="vuo.tree.find.VuoText" version="1.0.0" label="Find Subtree Value|<refresh>refresh\l|<tree>tree\l|<name>name\l|<value>value\r" pos="745,81" _name="\"OutputPort\""];
+FindSubtreeValue5 [type="vuo.tree.find.VuoText" version="1.0.0" label="Find Subtree Value|<refresh>refresh\l|<tree>tree\l|<name>name\l|<value>value\r" pos="746,-1" _name="\"InputMessage\""];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-202,118" _started_eventThrottling="enqueue"];
+GetMessageValues2 [type="vuo.osc.message.get.1.VuoReal" version="1.0.1" label="Get Message Values|<refresh>refresh\l|<message>message\l|<address>address\r|<data1>data1\r" pos="462,346"];
+HoldValue [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="803,333"];
+InputMessage2 [type="vuo.select.in.boolean.VuoText" version="2.0.0" label="OutputPort|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="958,75" _falseOption="\"53000\""];
+InputPort2 [type="vuo.select.in.boolean.VuoText" version="2.0.0" label="InputMessage|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="963,-17" _falseOption="\"\\/wek\\/outputs\""];
+MakeList2 [type="vuo.list.make.3.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<list>list\r" pos="456,200" _1="\"\\/cue\\/\"" _3="\".00\\/go\""];
+MakeList3 [type="vuo.list.make.1.VuoOscMessage" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="1153,195"];
+MakeList5 [type="vuo.list.make.9.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<8>8\l|<9>9\l|<list>list\r" pos="1303,-51" _1="\"Listening on port \"" _3="\" for messages \\n\\\"\"" _5="\" \<classnumber\>\\\". \\n\\nSending on port \"" _7="\" messages \\n\\\"\\/cue\\/\<classnumber\>.00\\/go\\\".\"" _8="\"\\n\\nCreate QLab cues 1.00, 2.00, 3.00 ... to trigger them.\"" _9="\"\\nEdit file Wekinator2Qlab.settings.txt in Resources folder of mac app package to change these settings.\""];
+MakeList6 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1483,-196"];
+MakeMessage [type="vuo.osc.message.make.1.VuoReal" version="1.1.0" label="Make Message|<refresh>refresh\l|<address>address\l|<data1>data1\l|<type1>type1\l|<message>message\r" pos="696,191" _data1="1.0" _type1="\"int32\""];
+MakeTextLayer2 [type="vuo.layer.make.text2" version="2.0.0" label="Make Text Layer|<refresh>refresh\l|<text>text\l|<font>font\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<opacity>opacity\l|<layer>layer\r" pos="1559,-59" _font="\{\"fontName\":\"Avenir-Medium\",\"pointSize\":36.0,\"underline\":false,\"color\":\{\"r\":0.99999278783798218,\"g\":1.0,\"b\":1.0,\"a\":1.0\},\"alignment\":\"center\",\"characterSpacing\":1.0,\"lineSpacing\":1.0\}" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _wrapWidth="1.8999999999999999" _opacity="1.0"];
+MakeTextLayer4 [type="vuo.layer.make.text2" version="2.0.0" label="Make Text Layer|<refresh>refresh\l|<text>text\l|<font>font\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<opacity>opacity\l|<layer>layer\r" pos="1338,296" _font="\{\"fontName\":\"Avenir-Medium\",\"pointSize\":24.0,\"underline\":false,\"color\":\{\"r\":0.0,\"g\":0.70625299215316772,\"b\":0.0,\"a\":1.0\},\"alignment\":\"left\",\"characterSpacing\":1.0,\"lineSpacing\":1.0\}" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":-0.60000002384185791\}" _wrapWidth="Infinity" _opacity="1.0"];
+ReceiveOSCMessages [type="vuo.osc.receive2" version="2.0.0" label="Receive OSC Messages|<refresh>refresh\l|<device>device\l|<receivedMessage>receivedMessage\r" pos="47,345" _receivedMessage_eventThrottling="enqueue"];
+RenderLayersToWindow [type="vuo.layer.render.window2" version="3.0.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="1535,-207" _multisampling="\"4\"" _updatedWindow_eventThrottling="enqueue"];
+SaveData [type="vuo.data.save" version="1.1.0" label="Save Data|<refresh>refresh\l|<url>url\l|<saveData>saveData\l|<overwriteUrl>overwriteUrl\l|<done>done\r" pos="515,-201" _url="\"Wekinator2Qlab.settings.txt\"" _overwriteUrl="0"];
+SelectEventOutput [type="vuo.select.out.boolean.event" version="2.0.0" label="Select Event Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="93,-52"];
+SelectInput [type="vuo.select.in.boolean.VuoText" version="2.0.0" label="InputPort|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="965,-114" _falseOption="\"12000\""];
+SelectLatest3 [type="vuo.select.latest.2.VuoText" version="1.0.0" label="Select Latest|<refresh>refresh\l|<option1>option1\l|<option2>option2\l|<latest>latest\r" pos="1079,435" _option1="\"OSC received!\""];
+SendOSCMessages [type="vuo.osc.send" version="1.0.0" label="Send OSC Messages|<refresh>refresh\l|<device>device\l|<sendMessages>sendMessages\l" pos="1186,169"];
+ShareValue [type="vuo.data.share.VuoText" version="1.0.0" label="Share Value|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="272,-186" _value="\"\<Wekinator2QLab\>\\n \  \  \  \ \<InputPort\>12000\<\\/InputPort\>\\n \  \  \  \ \<InputMessage\>\\/wek\\/outputs\<\\/InputMessage\>\\n \  \  \  \ \<OutputPort\>53000\<\\/OutputPort\>\\n\<\\/Wekinator2QLab\>\\n\""];
+SpecifyOSCInput [type="vuo.osc.make.input" version="1.0.0" label="Specify OSC Input|<refresh>refresh\l|<name>name\l|<port>port\l|<device>device\r" pos="184,116" _name="\"FromWekinator\""];
+SpecifyOSCOutput [type="vuo.osc.make.output" version="1.0.0" label="Specify OSC Output|<refresh>refresh\l|<name>name\l|<port>port\l|<device>device\r" pos="957,237" _name="\"ToQlab\""];
+SummarizeValue2 [type="vuo.data.summarize.VuoReal" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="556,314"];
+Wait2 [type="cremaschi.wait2" version="" label="wait2|<refresh>refresh\l|<Start>Start\l|<SecondsDelay>SecondsDelay\l|<BecameTrue>BecameTrue\r" pos="869,555" _SecondsDelay="0.29999999999999999" _BecameTrue_eventThrottling="enqueue"];
+
+AppendTexts3:compositeText -> MakeTextLayer2:text;
+AppendTexts:compositeText -> MakeMessage:address;
+ChangeWindowSize:changedWindowDescription -> RenderLayersToWindow:setWindowDescription;
+ConvertTextToData:data -> SaveData:saveData;
+ConvertTextToInteger4:integer -> HoldValue:value;
+ConvertTextToInteger:integer -> SpecifyOSCInput:port;
+FetchXMLTree:tree -> FindSubtreeValue3:tree;
+FetchXMLTree:tree -> FindSubtreeValue4:tree;
+FetchXMLTree:tree -> FindSubtreeValue5:tree;
+FileExists:exists -> InputMessage2:which;
+FileExists:exists -> InputPort2:which;
+FileExists:exists -> SelectEventOutput:which;
+FileExists:exists -> SelectInput:which;
+FilterByAddress:filteredMessage -> GetMessageValues2:message;
+FindSubtreeValue3:value -> SelectInput:trueOption;
+FindSubtreeValue4:value -> InputMessage2:trueOption;
+FindSubtreeValue5:value -> InputPort2:trueOption;
+FireOnStart:started -> ChangeWindowSize:windowDescription;
+FireOnStart:started -> FileExists:url;
+FireOnStart:started -> SelectEventOutput:in;
+FireOnStart:started -> SpecifyOSCInput:name;
+GetMessageValues2:data1 -> SelectLatest3:option1 [event=true];
+GetMessageValues2:data1 -> SummarizeValue2:value;
+GetMessageValues2:data1 -> Wait2:Start;
+HoldValue:heldValue -> SpecifyOSCOutput:port;
+InputMessage2:out -> ConvertTextToInteger4:text;
+InputMessage2:out -> MakeList5:6;
+InputPort2:out -> FilterByAddress:address;
+InputPort2:out -> MakeList5:4;
+MakeList2:list -> AppendTexts:texts;
+MakeList3:list -> SendOSCMessages:sendMessages;
+MakeList5:list -> AppendTexts3:texts;
+MakeList6:list -> RenderLayersToWindow:layers;
+MakeMessage:message -> HoldValue:update;
+MakeMessage:message -> MakeList3:1;
+MakeMessage:message -> SpecifyOSCOutput:name [event=true];
+MakeTextLayer2:layer -> MakeList6:1;
+MakeTextLayer4:layer -> MakeList6:2;
+ReceiveOSCMessages:receivedMessage -> FilterByAddress:message;
+SaveData:done -> InputMessage2:falseOption;
+SaveData:done -> InputPort2:falseOption;
+SaveData:done -> SelectInput:falseOption;
+SelectEventOutput:falseOption -> ShareValue:value;
+SelectEventOutput:trueOption -> FetchXMLTree:url;
+SelectInput:out -> ConvertTextToInteger:text;
+SelectInput:out -> MakeList5:2;
+SelectLatest3:latest -> MakeTextLayer4:text;
+ShareValue:sameValue -> ConvertTextToData:text;
+SpecifyOSCInput:device -> ReceiveOSCMessages:device;
+SpecifyOSCOutput:device -> SendOSCMessages:device;
+SummarizeValue2:summary -> MakeList2:2;
+Wait2:BecameTrue -> SelectLatest3:option2;
+}
