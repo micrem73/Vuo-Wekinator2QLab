@@ -1,5 +1,0 @@
-<Wekinator2QLab>
-        <InputPort>12000</InputPort>
-        <InputMessage>/wek/outputs</InputMessage>
-        <OutputPort>53000</OutputPort>
-</Wekinator2QLab>
